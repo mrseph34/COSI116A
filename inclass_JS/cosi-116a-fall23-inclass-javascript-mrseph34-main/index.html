@@ -1,22 +1,69 @@
 <!DOCTYPE html>
-<html> 
+<html>
+  
 <head>
-<meta charset=utf-8 />
-<title>JavaScript program to calculate multiplication and division of two numbers </title>
-<style type="text/css">
-body {margin: 30px;}
-</style> 
+    <title>HTML Calculator</title>
+  
+    <!-- For styling -->
+    <style>
+        table {
+            border: 1px solid black;
+            margin-left: auto;
+            margin-right: auto;
+        }
+          
+        input[type="button"] {
+            width: 100%;
+            padding: 20px 40px;
+            background-color: rgb(41, 41, 41);
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+        }
+          
+        input[type="text"] {
+            padding: 20px 30px;
+            font-size: 24px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            border: 2px solid black;
+        }
+    </style>
 </head>
+  
 <body>
-<form>
-1st Number : <input type="text" id="firstNumber" /><br>
-2nd Number: <input type="text" id="secondNumber" /><br>
-<input type="button" onClick="multiplyBy()" Value="Multiply" />
-<input type="button" onClick="divideBy()" Value="Divide" />
-</form>
-<p>The Result is : <br>
-<span id = "result"></span>
-</p>
+  
+    <!-- Create table -->
+    <table id="calcu">
+        <tr>
+            <td colspan="3">
+                1st Number : <input type="text" id="firstNumber" /><br>
+                2nd Number: <input type="text" id="secondNumber" /><br>
+            </td>
+        </tr>
+  
+        <tr>
+            <td><input type="button" onClick="divideBy()" value="/"></td>
+        </tr>
+        <tr>
+            <td><input type="button" onClick="multiplyBy()" value="*"></td>
+        </tr>
+        <tr>
+            <td><input type="button" onClick="subBy()" value="-"></td>
+        </tr>
+        <tr>
+            <td><input type="button" onClick="addBy()" value="+"></td>
+        </tr>
+        <tr>
+            <td>The Result is :
+                <span id = "result"></span>
+            </td>
+        </tr>
+    </table>
+    </form>
 <script src="index.js"></script> 
 </body>
-</html>
+</html> 
