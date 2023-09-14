@@ -5,3 +5,4 @@ function multiplyBy(){
 function divideBy(){ 
 	// Insert your code here
 }
+
