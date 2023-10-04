@@ -1,0 +1,888 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20232.23.0805.0415                               -->
+<workbook original-version='18.1' source-build='2023.2.1 (20232.23.0805.0415)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='los-angeles-international-airport-ground-vehicle-traffic-volume' inline='true' name='federated.1fmliwe18ndj2n13b6jup1uuy8nb' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='los-angeles-international-airport-ground-vehicle-traffic-volume' name='textscan.1pkcm3d0lv62u819zhb2p0yjyung'>
+            <connection class='textscan' directory='/Users/user/Documents/Coding/COSI116A/inclass_Tableau/la-airport-data' filename='los-angeles-international-airport-ground-vehicle-traffic-volume.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1pkcm3d0lv62u819zhb2p0yjyung' name='los-angeles-international-airport-ground-vehicle-traffic-volume.csv' table='[los-angeles-international-airport-ground-vehicle-traffic-volume#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='datetime' name='ReportingMonth' ordinal='0' />
+            <column datatype='string' name='EntryExitanything' ordinal='1' />
+            <column datatype='string' name='UpperLower' ordinal='2' />
+            <column datatype='integer' name='TOTAL VEHICLES' ordinal='3' />
+            <column datatype='string' name='KeyValue' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1pkcm3d0lv62u819zhb2p0yjyung' name='los-angeles-international-airport-ground-vehicle-traffic-volume.csv' table='[los-angeles-international-airport-ground-vehicle-traffic-volume#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='datetime' name='ReportingMonth' ordinal='0' />
+            <column datatype='string' name='EntryExitanything' ordinal='1' />
+            <column datatype='string' name='UpperLower' ordinal='2' />
+            <column datatype='integer' name='TOTAL VEHICLES' ordinal='3' />
+            <column datatype='string' name='KeyValue' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[los-angeles-international-airport-ground-vehicle-traffic-volume.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ReportingMonth</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[ReportingMonth]</local-name>
+            <parent-name>[los-angeles-international-airport-ground-vehicle-traffic-volume.csv]</parent-name>
+            <remote-alias>ReportingMonth</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[los-angeles-international-airport-ground-vehicle-traffic-volume.csv_67D4C5976E0C4179957C3BA7D297387F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EntryExitanything</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EntryExitanything]</local-name>
+            <parent-name>[los-angeles-international-airport-ground-vehicle-traffic-volume.csv]</parent-name>
+            <remote-alias>EntryExitanything</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[los-angeles-international-airport-ground-vehicle-traffic-volume.csv_67D4C5976E0C4179957C3BA7D297387F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UpperLower</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[UpperLower]</local-name>
+            <parent-name>[los-angeles-international-airport-ground-vehicle-traffic-volume.csv]</parent-name>
+            <remote-alias>UpperLower</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[los-angeles-international-airport-ground-vehicle-traffic-volume.csv_67D4C5976E0C4179957C3BA7D297387F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOTAL VEHICLES</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TOTAL VEHICLES]</local-name>
+            <parent-name>[los-angeles-international-airport-ground-vehicle-traffic-volume.csv]</parent-name>
+            <remote-alias>TOTAL VEHICLES</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[los-angeles-international-airport-ground-vehicle-traffic-volume.csv_67D4C5976E0C4179957C3BA7D297387F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KeyValue</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[KeyValue]</local-name>
+            <parent-name>[los-angeles-international-airport-ground-vehicle-traffic-volume.csv]</parent-name>
+            <remote-alias>KeyValue</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[los-angeles-international-airport-ground-vehicle-traffic-volume.csv_67D4C5976E0C4179957C3BA7D297387F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Entry Exitanything' datatype='string' name='[EntryExitanything]' role='dimension' type='nominal' />
+      <column caption='Key Value' datatype='string' name='[KeyValue]' role='dimension' type='nominal' />
+      <column caption='Reporting Month' datatype='datetime' name='[ReportingMonth]' role='dimension' type='ordinal' />
+      <column caption='Total Vehicles' datatype='integer' name='[TOTAL VEHICLES]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Total Vehicles (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='4' formula='[TOTAL VEHICLES]' peg='0' size='73680' />
+      </column>
+      <column caption='Upper Lower' datatype='string' name='[UpperLower]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='los-angeles-international-airport-ground-vehicle-traffic-volume.csv' datatype='table' name='[__tableau_internal_object_id__].[los-angeles-international-airport-ground-vehicle-traffic-volume.csv_67D4C5976E0C4179957C3BA7D297387F]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[los-angeles-international-airport-ground-vehicle-traffic-volume.csv_67D4C5976E0C4179957C3BA7D297387F]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:los-angeles-international-airport-ground-vehicle-traffic-volume.csv_67D4C5976E0C4179957C3BA7D297387F:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[TOTAL VEHICLES]' derivation='Count' name='[cnt:TOTAL VEHICLES:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[TOTAL VEHICLES]' derivation='Sum' name='[sum:TOTAL VEHICLES:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1fmliwe18ndj2n13b6jup1uuy8nb].[cnt:TOTAL VEHICLES:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1fmliwe18ndj2n13b6jup1uuy8nb].[sum:TOTAL VEHICLES:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1fmliwe18ndj2n13b6jup1uuy8nb].[__tableau_internal_object_id__].[cnt:los-angeles-international-airport-ground-vehicle-traffic-volume.csv_67D4C5976E0C4179957C3BA7D297387F:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='los-angeles-international-airport-ground-vehicle-traffic-volume.csv' id='los-angeles-international-airport-ground-vehicle-traffic-volume.csv_67D4C5976E0C4179957C3BA7D297387F'>
+            <properties context=''>
+              <relation connection='textscan.1pkcm3d0lv62u819zhb2p0yjyung' name='los-angeles-international-airport-ground-vehicle-traffic-volume.csv' table='[los-angeles-international-airport-ground-vehicle-traffic-volume#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='datetime' name='ReportingMonth' ordinal='0' />
+                  <column datatype='string' name='EntryExitanything' ordinal='1' />
+                  <column datatype='string' name='UpperLower' ordinal='2' />
+                  <column datatype='integer' name='TOTAL VEHICLES' ordinal='3' />
+                  <column datatype='string' name='KeyValue' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='los-angeles-international-airport-lax-parking-lots-current-status' inline='true' name='federated.0hbz26e0ub1mqi17nbmb11fdkyn8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='los-angeles-international-airport-lax-parking-lots-current-status' name='textscan.11mj3540rksp2p1cj2nvt1i2ajck'>
+            <connection class='textscan' directory='/Users/user/Documents/Coding/COSI116A/inclass_Tableau/la-airport-data' filename='los-angeles-international-airport-lax-parking-lots-current-status.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.11mj3540rksp2p1cj2nvt1i2ajck' name='los-angeles-international-airport-lax-parking-lots-current-status.csv' table='[los-angeles-international-airport-lax-parking-lots-current-status#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Key_Value' ordinal='0' />
+            <column datatype='string' name='LotDescription' ordinal='1' />
+            <column datatype='string' name='ParkingID' ordinal='2' />
+            <column datatype='string' name='ParkingName' ordinal='3' />
+            <column datatype='string' name='TotalParkingSpaces' ordinal='4' />
+            <column datatype='string' name='Occupied' ordinal='5' />
+            <column datatype='string' name='FreeSpaces' ordinal='6' />
+            <column datatype='string' name='FullCapacity' ordinal='7' />
+            <column datatype='string' name='Color' ordinal='8' />
+            <column datatype='datetime' name='DataExportDateTime' ordinal='9' />
+            <column datatype='real' name='Long' ordinal='10' />
+            <column datatype='real' name='Lat' ordinal='11' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.11mj3540rksp2p1cj2nvt1i2ajck' name='los-angeles-international-airport-lax-parking-lots-current-status.csv' table='[los-angeles-international-airport-lax-parking-lots-current-status#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Key_Value' ordinal='0' />
+            <column datatype='string' name='LotDescription' ordinal='1' />
+            <column datatype='string' name='ParkingID' ordinal='2' />
+            <column datatype='string' name='ParkingName' ordinal='3' />
+            <column datatype='string' name='TotalParkingSpaces' ordinal='4' />
+            <column datatype='string' name='Occupied' ordinal='5' />
+            <column datatype='string' name='FreeSpaces' ordinal='6' />
+            <column datatype='string' name='FullCapacity' ordinal='7' />
+            <column datatype='string' name='Color' ordinal='8' />
+            <column datatype='datetime' name='DataExportDateTime' ordinal='9' />
+            <column datatype='real' name='Long' ordinal='10' />
+            <column datatype='real' name='Lat' ordinal='11' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[los-angeles-international-airport-lax-parking-lots-current-status.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Key_Value</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Key_Value]</local-name>
+            <parent-name>[los-angeles-international-airport-lax-parking-lots-current-status.csv]</parent-name>
+            <remote-alias>Key_Value</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[los-angeles-international-airport-lax-parking-lots-current-status.csv_35A093592DAC45E9BA148AD6ED7E4B7C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LotDescription</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LotDescription]</local-name>
+            <parent-name>[los-angeles-international-airport-lax-parking-lots-current-status.csv]</parent-name>
+            <remote-alias>LotDescription</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[los-angeles-international-airport-lax-parking-lots-current-status.csv_35A093592DAC45E9BA148AD6ED7E4B7C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ParkingID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ParkingID]</local-name>
+            <parent-name>[los-angeles-international-airport-lax-parking-lots-current-status.csv]</parent-name>
+            <remote-alias>ParkingID</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[los-angeles-international-airport-lax-parking-lots-current-status.csv_35A093592DAC45E9BA148AD6ED7E4B7C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ParkingName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ParkingName]</local-name>
+            <parent-name>[los-angeles-international-airport-lax-parking-lots-current-status.csv]</parent-name>
+            <remote-alias>ParkingName</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[los-angeles-international-airport-lax-parking-lots-current-status.csv_35A093592DAC45E9BA148AD6ED7E4B7C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalParkingSpaces</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TotalParkingSpaces]</local-name>
+            <parent-name>[los-angeles-international-airport-lax-parking-lots-current-status.csv]</parent-name>
+            <remote-alias>TotalParkingSpaces</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[los-angeles-international-airport-lax-parking-lots-current-status.csv_35A093592DAC45E9BA148AD6ED7E4B7C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Occupied</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Occupied]</local-name>
+            <parent-name>[los-angeles-international-airport-lax-parking-lots-current-status.csv]</parent-name>
+            <remote-alias>Occupied</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[los-angeles-international-airport-lax-parking-lots-current-status.csv_35A093592DAC45E9BA148AD6ED7E4B7C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FreeSpaces</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FreeSpaces]</local-name>
+            <parent-name>[los-angeles-international-airport-lax-parking-lots-current-status.csv]</parent-name>
+            <remote-alias>FreeSpaces</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[los-angeles-international-airport-lax-parking-lots-current-status.csv_35A093592DAC45E9BA148AD6ED7E4B7C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FullCapacity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FullCapacity]</local-name>
+            <parent-name>[los-angeles-international-airport-lax-parking-lots-current-status.csv]</parent-name>
+            <remote-alias>FullCapacity</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[los-angeles-international-airport-lax-parking-lots-current-status.csv_35A093592DAC45E9BA148AD6ED7E4B7C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Color</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Color]</local-name>
+            <parent-name>[los-angeles-international-airport-lax-parking-lots-current-status.csv]</parent-name>
+            <remote-alias>Color</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[los-angeles-international-airport-lax-parking-lots-current-status.csv_35A093592DAC45E9BA148AD6ED7E4B7C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DataExportDateTime</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[DataExportDateTime]</local-name>
+            <parent-name>[los-angeles-international-airport-lax-parking-lots-current-status.csv]</parent-name>
+            <remote-alias>DataExportDateTime</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[los-angeles-international-airport-lax-parking-lots-current-status.csv_35A093592DAC45E9BA148AD6ED7E4B7C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Long</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Long]</local-name>
+            <parent-name>[los-angeles-international-airport-lax-parking-lots-current-status.csv]</parent-name>
+            <remote-alias>Long</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[los-angeles-international-airport-lax-parking-lots-current-status.csv_35A093592DAC45E9BA148AD6ED7E4B7C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Lat]</local-name>
+            <parent-name>[los-angeles-international-airport-lax-parking-lots-current-status.csv]</parent-name>
+            <remote-alias>Lat</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[los-angeles-international-airport-lax-parking-lots-current-status.csv_35A093592DAC45E9BA148AD6ED7E4B7C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Data Export Date Time' datatype='datetime' name='[DataExportDateTime]' role='dimension' type='ordinal' />
+      <column caption='Free Spaces' datatype='string' name='[FreeSpaces]' role='dimension' type='nominal' />
+      <column caption='Full Capacity' datatype='string' name='[FullCapacity]' role='dimension' type='nominal' />
+      <column caption='Key Value' datatype='string' name='[Key_Value]' role='dimension' type='nominal' />
+      <column aggregation='Avg' datatype='real' name='[Lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Long]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Lot Description' datatype='string' name='[LotDescription]' role='dimension' type='nominal' />
+      <column caption='Parking ID' datatype='string' name='[ParkingID]' role='dimension' type='nominal' />
+      <column caption='Parking Name' datatype='string' name='[ParkingName]' role='dimension' type='nominal' />
+      <column caption='Total Parking Spaces' datatype='string' name='[TotalParkingSpaces]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='los-angeles-international-airport-lax-parking-lots-current-status.csv' datatype='table' name='[__tableau_internal_object_id__].[los-angeles-international-airport-lax-parking-lots-current-status.csv_35A093592DAC45E9BA148AD6ED7E4B7C]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='los-angeles-international-airport-lax-parking-lots-current-status.csv' id='los-angeles-international-airport-lax-parking-lots-current-status.csv_35A093592DAC45E9BA148AD6ED7E4B7C'>
+            <properties context=''>
+              <relation connection='textscan.11mj3540rksp2p1cj2nvt1i2ajck' name='los-angeles-international-airport-lax-parking-lots-current-status.csv' table='[los-angeles-international-airport-lax-parking-lots-current-status#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Key_Value' ordinal='0' />
+                  <column datatype='string' name='LotDescription' ordinal='1' />
+                  <column datatype='string' name='ParkingID' ordinal='2' />
+                  <column datatype='string' name='ParkingName' ordinal='3' />
+                  <column datatype='string' name='TotalParkingSpaces' ordinal='4' />
+                  <column datatype='string' name='Occupied' ordinal='5' />
+                  <column datatype='string' name='FreeSpaces' ordinal='6' />
+                  <column datatype='string' name='FullCapacity' ordinal='7' />
+                  <column datatype='string' name='Color' ordinal='8' />
+                  <column datatype='datetime' name='DataExportDateTime' ordinal='9' />
+                  <column datatype='real' name='Long' ordinal='10' />
+                  <column datatype='real' name='Lat' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Vehicles in LA International Airport</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='los-angeles-international-airport-ground-vehicle-traffic-volume' name='federated.1fmliwe18ndj2n13b6jup1uuy8nb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1fmliwe18ndj2n13b6jup1uuy8nb'>
+            <column caption='Reporting Month' datatype='datetime' name='[ReportingMonth]' role='dimension' type='ordinal' />
+            <column caption='Total Vehicles' datatype='integer' name='[TOTAL VEHICLES]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total Vehicles (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='4' formula='[TOTAL VEHICLES]' peg='0' size='73680' />
+            </column>
+            <column-instance column='[TOTAL VEHICLES]' derivation='Count' name='[cnt:TOTAL VEHICLES:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total Vehicles (bin)]' derivation='None' name='[none:Total Vehicles (bin):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ReportingMonth]' derivation='Year' name='[yr:ReportingMonth:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1fmliwe18ndj2n13b6jup1uuy8nb].[cnt:TOTAL VEHICLES:qk]' palette='red_green_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1fmliwe18ndj2n13b6jup1uuy8nb].[cnt:TOTAL VEHICLES:qk]' />
+              <color column='[federated.1fmliwe18ndj2n13b6jup1uuy8nb].[cnt:TOTAL VEHICLES:qk]' />
+              <text column='[federated.1fmliwe18ndj2n13b6jup1uuy8nb].[none:Total Vehicles (bin):qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontalignment='0' fontname='Zapf Dingbats'>Æ </run>
+                <run bold='true' fontalignment='0' fontname='Zapf Dingbats'><![CDATA[<[federated.1fmliwe18ndj2n13b6jup1uuy8nb].[none:Total Vehicles (bin):qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='8' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1fmliwe18ndj2n13b6jup1uuy8nb].[yr:ReportingMonth:ok]</cols>
+        <tooltip-style tooltip-mode='sticky' />
+      </table>
+      <simple-id uuid='{4284552A-96AF-4466-BDB7-57134836710D}' />
+    </worksheet>
+    <worksheet name='Sheet 1 (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Vehicles in LA International Airport</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='los-angeles-international-airport-ground-vehicle-traffic-volume' name='federated.1fmliwe18ndj2n13b6jup1uuy8nb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1fmliwe18ndj2n13b6jup1uuy8nb'>
+            <column caption='Reporting Month' datatype='datetime' name='[ReportingMonth]' role='dimension' type='ordinal' />
+            <column caption='Total Vehicles' datatype='integer' name='[TOTAL VEHICLES]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total Vehicles (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='4' formula='[TOTAL VEHICLES]' peg='0' size='73680' />
+            </column>
+            <column caption='Upper Lower' datatype='string' name='[UpperLower]' role='dimension' type='nominal' />
+            <column-instance column='[TOTAL VEHICLES]' derivation='Count' name='[cnt:TOTAL VEHICLES:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total Vehicles (bin)]' derivation='None' name='[none:Total Vehicles (bin):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[UpperLower]' derivation='None' name='[none:UpperLower:nk]' pivot='key' type='nominal' />
+            <column-instance column='[ReportingMonth]' derivation='Year' name='[yr:ReportingMonth:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1fmliwe18ndj2n13b6jup1uuy8nb].[cnt:TOTAL VEHICLES:qk]' palette='red_green_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1fmliwe18ndj2n13b6jup1uuy8nb].[cnt:TOTAL VEHICLES:qk]' />
+              <color column='[federated.1fmliwe18ndj2n13b6jup1uuy8nb].[cnt:TOTAL VEHICLES:qk]' />
+              <text column='[federated.1fmliwe18ndj2n13b6jup1uuy8nb].[none:Total Vehicles (bin):qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontalignment='0' fontname='Zapf Dingbats'>Æ </run>
+                <run bold='true' fontalignment='0' fontname='Zapf Dingbats'><![CDATA[<[federated.1fmliwe18ndj2n13b6jup1uuy8nb].[none:Total Vehicles (bin):qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='8' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1fmliwe18ndj2n13b6jup1uuy8nb].[none:UpperLower:nk]</rows>
+        <cols>[federated.1fmliwe18ndj2n13b6jup1uuy8nb].[yr:ReportingMonth:ok]</cols>
+        <tooltip-style tooltip-mode='sticky' />
+      </table>
+      <simple-id uuid='{0CB1F667-1FF4-404D-BEC2-CA0863027C69}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1fmliwe18ndj2n13b6jup1uuy8nb].[cnt:TOTAL VEHICLES:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1fmliwe18ndj2n13b6jup1uuy8nb].[cnt:TOTAL VEHICLES:qk]</field>
+            <field>[federated.1fmliwe18ndj2n13b6jup1uuy8nb].[none:Total Vehicles (bin):qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{248250D7-B69C-43BF-BDF5-97CDD0EB222E}' />
+    </window>
+    <window class='worksheet' name='Sheet 1 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1fmliwe18ndj2n13b6jup1uuy8nb].[cnt:TOTAL VEHICLES:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1fmliwe18ndj2n13b6jup1uuy8nb].[cnt:TOTAL VEHICLES:qk]</field>
+            <field>[federated.1fmliwe18ndj2n13b6jup1uuy8nb].[none:Total Vehicles (bin):qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2D008C75-C9B0-438F-AD47-59FD5C593539}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='182' name='Sheet 1' width='384'>
+      iVBORw0KGgoAAAANSUhEUgAAAYAAAAC2CAYAAADQk1q7AAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAANQklEQVR4nO3dfUyV9f/H8ddhodwEEncmUBEJyDJJXTc6rLZK96s2TWyuzDnLsfb7h8zy
+      +8e3NrbWH7W1+tYy64++mi115HcqbLSYWmHETaLoAluLRmGIyI0H4k7hfP9Q+IrcHeVwbng/
+      H/91rutcn4+n93Ve1/s613XhcLlcLgEAzAny9QQAAL5BAACAUQQAABhFAACAUQQAABhFAACA
+      UQQAABhFAACAUQQAABhFAACAUQQAABhFAACAUQQAABhFAACAUQQAABhFAACAUQQAABhFAACA
+      UQQAABhFAACAUQQAABhFAACAUQQAABhFAACAUQQAABhFAACAUQQAABhFAACAUQQAABhFAACA
+      UQQAABhFAACAUQQAABhFAACAUQQAABhFAACAUQQAABhFAACAUQQAABhFAACAUQQAABhFAACA
+      UQQAABhFAACAUQQAABhFAACAUQQAABhFAACAUQQAABhFAACAUQQAABhFAACAUQQAABhFAACA
+      UQQAABhFAACAUQQAABhFAACAUQQAABhFAACAUQQAABhFAACAUQQAABhFAACAUQQAABhFAACA
+      UQQAABh1k68n4G96enpUX1+v+vp6NTQ0KCQkRLNnz9bixYsVFRU17nt//fVX/fLLL/r9998V
+      HR2ttLQ0zZ8/X6GhoW6N3d/fr7KyMg0MDGjZsmXjrtvX16eTJ0/q7NmzamlpUX9/v6Kjo5WQ
+      kKBFixbpppv4X+vvAqXWRlNaWqq+vj5J0sMPPyyHw3Hd24B3jFdnDpfL5fL1BP3BwMCAiouL
+      VVhYOFTYV5sxY4ZWrVqlRx99dNT379+/X0VFRSNeT0hI0ObNmxUZGTnm2C6XS5WVlTp48KCa
+      m5sVHx+vN998c9R1e3p6tG/fPlVUVKinp2fUdaKiorRu3TotWLBgzDHhO4FSa2MpLS3Vzp07
+      h/57+/btBIAfcqfOOEyU1Nvbq7fffltnzpxRZGSksrKylJqaqjvuuEMNDQ06deqUKioqlJ+f
+      r7i4uBFfrAcOHFBRUdHQF296erqam5v19ddfq7KyUu+8845ef/11hYSEjBj71KlT2r9/vxoa
+      GtzaiZxOp77//nuFh4friSeeUFpamuLi4hQSEqJz587p6NGj+uGHH/Tpp59q69atuv322z32
+      OWHyAqnWRuN0OpWfn6/IyEiFh4ersbHxhraDqeVunREAunxUfebMGWVmZmrDhg0KDw8fWhYT
+      E6PMzEwtXLhQH3zwgUpKSobtlN3d3Tp06JDCwsKUm5urhIQESVJSUpJeeOEF9fX1qbq6WmVl
+      ZXrkkUeGjbt3714dPnxYkrRgwQKtXLlSH3744bg7Z2hoqNatW6clS5YoODh42LKbb75ZKSkp
+      io6OVkFBgcrKyggAPxNItTaaL7/8Ul1dXcrJydGRI0du8FPAVHO3zggAScHBwVq/fr2ysrLG
+      XOfuu+9WRESE/vjjj2Gvl5WVqbe3VytWrBjaIQcFBQXpmWeeUXV1tb777rsRO+WFCxeUnp6u
+      VatWKSUlxa25RkRE6KGHHhp3nSVLlqigoEB//vmnW9uE9wRSrV2rqqpKx48f17333qvFixcT
+      AH7M3TojACSFhYWN+0FJ0qVLl9TX16eYmJhhr1dWVkqSHnzwwVHfFxcXp7vuuku//fabGhsb
+      NWfOnKFla9eu1axZsyY5+5HOnj0rSUpMTPT4tjE5gVprXV1d2r17t8LCwvTcc8/d8HbgHe7W
+      GZeBuqmoqEi9vb2aO3fusNdbW1t1yy23jDgiu9r8+fOH1r3aVHz5O51O7du3T5KUmZnp8e1j
+      6vljreXn58vpdCo7O3tK6hbeV1RURAcwEZfLpcLCQhUWFiosLExPPvnksGVOp1O33XbbuNsY
+      3GHa29unbJ7d3d0qKytTcXGxWlpatHr1amVkZEzZePA8f6212tpalZaWat68eRMeVcL/XV1n
+      BMA4nE6nPvvsM9XW1io8PFwvv/zysOuzOzs71d/fP+5ld9Ll8/bS5fOwntLS0qKCggJduHBB
+      bW1tOn/+vC5evKikpCRt2rRJ9913n8fGwtTz11rr7e3Vrl27NGPGDD3//PMe2SZ859o6IwDG
+      cOLECe3atUudnZ1KTk5WTk7OiHOyvb29kqSZM2eOu63B5WNdt38jenp69OOPP454PTU1dcQ8
+      4d/8udYOHDiglpYWrVmzRnFxcR7ZJnxjtDojAK4xMDCgr776SocOHZLD4dDy5cu1cuXKUe+s
+      HTza6uzsHHebg8snOnq7HomJiXr//ffV2dkpp9OppqYmnThxQiUlJTpy5Igef/xxZWdnc4OO
+      H/P3Wqurq9Phw4eVnJw85k1p8H/j1RkBcJXe3l59/PHHqq2tVUREhHJycpSWljbm+jNnzlRI
+      SIicTue42x1c7ukfz0JDQxUaGjp09cfSpUvV0tKibdu2qbi4WA6HQ9nZ2R4dE57h77V26dIl
+      ff7553K5XHr66af1999/j1inv79/aMygoCAFBQUNu94cvjdRnREAV7hcLu3YsUO1tbWKiorS
+      5s2bdeutt074vlmzZqm1tVUDAwMKChr9oqrz588PrTvVYmJi9Nprr+nVV19VeXm5Vq9eTRfg
+      ZwKh1k6ePDl0l+9777037rpbt26VdPmGtDfeeGNS48Jz3KkzAuCKkpISVVVVKSYmRq+88opi
+      Y2Pdel9iYqKampr0888/65577hmx3OVy6dixYwoKChp2XfZUCgkJUWpqqmpqanTu3DnNnj3b
+      K+PCPYFQa/Hx8VqxYsW461RUVKitrU3Lly+Xw+FQdHT0pMaEZ7lTZwSALu84xcXFkqRNmza5
+      vUNK0rJly1RVVaXS0tJRd8rTp0+rra1NixYtGjqP6w3t7e1yOBxcs+1nAqXWkpKSlJSUNO46
+      dXV1amtro8v0Q+7WGTeCSaqvrx86Ur7e2+QzMjIUFxenqqoqffvtt8OWtbS0aMeOHZI04eMb
+      3PXJJ59oz549Q63+tVwulw4ePKi//vpLd95556gPBYPvBFKtIXC5W2d0AJKam5slSR0dHdq2
+      bdu46wYHB+vFF18cOgfrcDi0fv16ffTRR9qzZ4/q6uo0d+5ctba2qqysTO3t7crKytK8efOG
+      befcuXP65ptvRmy/u7tbHR0d+uKLL4a9fv/99ystLU1dXV1DXwAZGRmaM2eOYmNjFRwcrNbW
+      Vh07dkxNTU0KDQ3Vxo0bJ/OxYAoEUq0hcLlbZwSA/nfXZFdXl6qrqydcf+PGjcN+hEtPT1du
+      bq62b9+u8vJylZeXS7r8gK7HHntMa9asGdEid3R0qKSkZMwxrl2WnJystLQ0vfTSSyovL1dJ
+      SYlqampUU1MzbD2Hw6EHHnhATz31lOLj4yf8t8C7AqnWELjcrTP+IIwHuVwuNTY2qr6+XlFR
+      UUpJSZnwxp3J6OzsVGtrq9ra2uRwOBQTE6PY2NgpHRP+wdu1humJAAAAo/gRGACMIgAAwCgC
+      AACMIgAAwCgCAACMIgAAwCgCAACMIgAAwKhJPwrip59+8sQ8AABexp3AAGAUp4AAwCgCAACM
+      IgAAwCgCAACMIgAAwCgCAACMIgAAwCgCAACM8tofhb/4r396a6jrEpz7liRpw+61UzrOzmf3
+      enUcq5wbV/t6CpMS+e//SJLySrf4dB55S9+VNPl69UTde3rf8dQ+4q/faRMZ/M47fvooHQAA
+      WEUAAIBRBAAAGEUAAIBRBAAAGEUAAIBRBAAAGEUAAIBRBAAAGEUAAIBRBAAAGEUAAIBRBAAA
+      GEUAAIBRBAAAGEUAAIBRBAAAGEUAAIBRBAAAGEUAAIBRBAAAGEUAAIBRN/l6Av5i57N7p9U4
+      CGx5S9/19RRgAB0AABhFB3DFkrf/b1Lv//EfRX6xncH3I7DllW7x7fh0IBMKzn3L11OYNDoA
+      ADCKDgAAbsDFf/3T11O4IYOdy8J5WXQAAGAVHQCmlch//8fXUwACQl7pFjoAALDKax3AdPjF
+      HP7v+Omjvp7CpCycl+XrKcAQOgAAMMprHYC/HplxxAWMzVN3rntiO9xF73l0AABgFFcBARjT
+      ZO9sn4zBu9pT//+hcdf7ddv3bq137fqgAwAAswgAADCKAAAAowgAADCKAAAAowgAADCKAAAA
+      owgAADCKAAAAowgAADCKAAAAo3gWEIAxDT6PB9MTHQAAGEUHcIWnjnT8bTsITHlL3/X1FCT5
+      x9NAMXXoAADAKDqAK6b6SMfdZ5tfi2ed25RXusW34/tJB4Kpk7f0XToAALCKDgDTCn/jGd4S
+      nPuWr6cwKXmlW+gAAMAqOgBMK8dPH/X1FCaFDmYkd3/X8vbvX4Faa1fXGB0AABhFBwDAr13v
+      lXMT4Uq5/6EDAACjvNYBcG4TAPwLHQAAGOW1DmDD7rXeGuq67Hx2r6+nAPgtnsczvfEjMIAx
+      8TC46Y1TQABgFB0AAL/GZZtThw4AAIyiA7jCW+cbb/RohqMgWMWNYFOHDgAAjKIDuMLTRxnX
+      ut4/7DLZcQBgInQAAGAUAQAARhEAAGAUAQAARhEAAGCUw+VyuXw9CQCA99EBAIBR/wWFJLuI
+      l/lHKgAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='250' name='Sheet 1 (2)' width='384'>
+      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
+      IkH9P6Q/QxKLb+bQAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
